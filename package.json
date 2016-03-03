@@ -1,0 +1,28 @@
+{
+  "name": "books-in-pocket",
+  "version": "1.0.0",
+  "description": "a simple books manage project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shinyting/booksInPocket.git"
+  },
+  "keywords": [
+    "jquery",
+    "mobile"
+  ],
+  "author": "shinyting",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shinyting/booksInPocket/issues"
+  },
+  "homepage": "https://github.com/shinyting/booksInPocket#readme",
+  "dependencies": {
+    "consolidate": "^0.14.0",
+    "express": "^4.13.4",
+    "swig": "^1.4.2"
+  }
+}
