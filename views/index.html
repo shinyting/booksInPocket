@@ -4,9 +4,39 @@
 		<title>books in pocket</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
+		<link rel="stylesheet" type="text/css" href="bower_components/jquery-mobile/css/themes/default/jquery.mobile.css">
+		<script type="text/javascript" src="bower_components/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="javascripts/jquery.mobile.min.js"></script>
 	</head>
 	<body>
-		<p>jquery mobile project</p>
+		<div data-role="page" id="foo">
+			<div data-role="header">
+				<h1>foo</h1>
+			</div>
+			<div class="ui-content" role="main">
+				<p>I'm first in the source order so I'm shown as the page.</p>
+				<p>
+					View internal page called 
+					<a href="#bar">bar</a>
+				</p>
+			</div>
+			<div data-role="footer">
+				<h4>Page Footer</h4>
+			</div>
+		</div>
+		<div data-role="page" id="bar">
+			<div data-role="header">
+				<h1>Bar</h1>
+			</div>
+			<div role="main" class="ui-content">
+				<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+				<p>
+					<a href="#foo">Back to foo</a>
+				</p>
+			</div>
+			<div data-role="footer">
+				<h4>Page Footer Page Footer</h4>
+			</div>
+		</div>
 	</body>
 </html>
