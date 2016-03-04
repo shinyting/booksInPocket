@@ -1,0 +1,45 @@
+/*common styles*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-family: "HelveticaNeue";
+}
+
+#slider img {
+	display: block;
+	width: 100%;
+	height: 200px;
+}
+.header {
+	background: #1e70cd !important;
+	overflow: hidden;
+	height: 64px;
+}
+.header h1 {
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 17px;
+	color: #fff;
+	text-shadow: none !important;
+}
+
+.ui-content {
+	padding: 0px;
+}
+.slick-dots {
+	bottom: 0px;
+}
+.slick-slider {
+	margin: 0px;
+}
+.booklist {
+	margin: 0px !important;
+}
+.booklist img {
+	width: 80px;
+	height: 80px;
+}

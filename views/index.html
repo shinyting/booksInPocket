@@ -4,24 +4,19 @@
 		<title>books in pocket</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="bower_components/jquery-mobile/css/themes/default/jquery.mobile.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
 		<link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick.css">
 		<link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick-theme.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css">
 		<script type="text/javascript" src="bower_components/jquery/jquery.min.js"></script>
-		<script type="text/javascript" src="javascripts/jquery.mobile.min.js"></script>
+		<script type="text/javascript" src="javascripts/jquery.mobile-1.4.5.min.js"></script>
 		<script type="text/javascript" src="bower_components/slick-carousel/slick/slick.min.js"></script>
-		<style type="text/css">
-			#slider img {
-				display: block;
-				width: 100%;
-				height: 200px;
-			}
-		</style>
+		<script type="text/javascript" src="javascripts/main.js"></script>
 	</head>
 	<body>
 		<div data-role="page" id="foo">
-			<div data-role="header">
-				<h1>foo</h1>
+			<div data-role="header" class="header" data-position="fixed">
+				<h1>口袋图书</h1>
 			</div>
 			<div class="ui-content" role="main">
 				<div data-slick='' id="slider">
@@ -35,19 +30,58 @@
 				  		<img src="images/alithree.jpg">
 				    </div>
 				</div>
-				<p>I'm first in the source order so I'm shown as the page.</p>
-				<p>
-					View internal page called 
-					<a href="#bar">bar</a>
-				</p>
+				<ul data-role="listview" data-inset="true" class="booklist">
+					<li>
+						<a href="#detail">
+							<img src="images/alione.jpg">
+							<h2>broken bells</h2>
+							<p>controduction controduction</p>
+						</a>
+					</li>
+					<li>
+						<a href="#detail">
+							<img src="images/alione.jpg">
+							<h2>broken bells</h2>
+							<p>controduction controduction</p>
+						</a>
+					</li>
+					<li>
+						<a href="#detail">
+							<img src="images/alione.jpg">
+							<h2>broken bells</h2>
+							<p>controduction controduction</p>
+						</a>
+					</li>
+					<li>
+						<a href="#detail">
+							<img src="images/alione.jpg">
+							<h2>broken bells</h2>
+							<p>controduction controduction</p>
+						</a>
+					</li>
+					<li>
+						<a href="#detail">
+							<img src="images/alione.jpg">
+							<h2>broken bells</h2>
+							<p>controduction controduction</p>
+						</a>
+					</li>
+					<li>
+						<a href="#detail">
+							<img src="images/alione.jpg">
+							<h2>broken bells</h2>
+							<p>controduction controduction</p>
+						</a>
+					</li>
+				</ul>
 			</div>
-			<div data-role="footer">
+			<div data-role="footer" data-position="fixed">
 				<h4>Page Footer</h4>
 			</div>
 		</div>
-		<div data-role="page" id="bar">
-			<div data-role="header">
-				<h1>Bar</h1>
+		<div data-role="page" id="detail" class="header">
+			<div data-role="header" data-position="fixed">
+				<h1>图书详情</h1>
 			</div>
 			<div role="main" class="ui-content">
 				<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
@@ -55,24 +89,9 @@
 					<a href="#foo">Back to foo</a>
 				</p>
 			</div>
-			<div data-role="footer">
+			<div data-role="footer" data-position="fixed">
 				<h4>Page Footer Page Footer</h4>
 			</div>
 		</div>
-
-		<script type="text/javascript">
-			$(function () {
-				$('#slider').slick({
-					dots: true,
-					speed: 500,
-					adaptiveHeight: true,
-					autoplay: true,
-					// centerMode: true,
-					// fade: true,
-					// prevArrow: '<a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-l ui-btn-icon-notext"></a>',
-					// nextArrow: ''
-				})
-			})
-		</script>
 	</body>
 </html>
