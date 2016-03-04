@@ -5,6 +5,7 @@
 }
 body {
 	font-family: "HelveticaNeue";
+	font-size: 14px;
 }
 .green {
 	color: #5d7747;
@@ -34,19 +35,35 @@ body {
 	padding: 0px;
 }
 
-/*book style page style*/
+/*book list style page style*/
 .slick-dots {
 	bottom: 0px;
 }
 .slick-slider {
 	margin: 0px;
 }
+.slider-item {
+	position: relative;
+}
+.slider-item p {
+	width: 35%;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	background: #900;
+	color: #fff;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	opacity: 0.6;
+	text-align: center;
+}
 .booklist {
 	margin: 0px !important;
 }
 .booklist img {
-	width: 80px;
-	height: 80px;
+	width: 100px;
+	height: 100px;
 }
 
 /*book detail page style*/
@@ -73,4 +90,8 @@ body {
 }
 .description dd {
 	width: 80%;
+}
+.header .ui-icon-home {
+	background-color: #1e70cd;
+	/*border-color: #1e70cd;*/
 }
