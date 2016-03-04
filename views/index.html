@@ -14,7 +14,8 @@
 		<script type="text/javascript" src="javascripts/main.js"></script>
 	</head>
 	<body>
-		<div data-role="page" id="foo">
+		<!-- book list page start-->
+		<div data-role="page" id="home">
 			<div data-role="header" class="header" data-position="fixed">
 				<h1>口袋图书</h1>
 			</div>
@@ -79,19 +80,45 @@
 				<h4>Page Footer</h4>
 			</div>
 		</div>
-		<div data-role="page" id="detail" class="header">
-			<div data-role="header" data-position="fixed">
+		<!-- book list page end -->
+
+		<!-- book detail page start -->
+		<div data-role="page" id="detail">
+			<div data-role="header" data-position="fixed" class="header">
+				<a href="#home" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext"></a>
 				<h1>图书详情</h1>
 			</div>
 			<div role="main" class="ui-content">
-				<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
-				<p>
-					<a href="#foo">Back to foo</a>
-				</p>
+				<div class="description">
+					<img src="images/alione.jpg">
+					<h3>宇宙再大大不过我和你</h3>
+					<dl>
+						<dt>作者：</dt>
+						<dd>大橘子</dd>
+						<dt>出版社：</dt>
+						<dd>中信出版社</dd>
+					</dl>
+					<div class="summary">
+						<p>
+							<span class="green">内容简介：</span>
+							大蓝猫，小男孩，50幅温馨小画，一座随时为你开门的“20毫米美术馆”。在大橘子的世界里，“宇宙再大大不过我和你”是他最想对他的猫说、也是最希望它能懂得的话。这里有50幅插画，留在盒子里，是属于大猫和小男孩的50件无所不能的小事儿；挂在墙上，是你与幸福相遇的50个瞬间。
+						</p>
+					</div>
+					<div class="catalog">
+						<p>
+							<span class="green">目录：</span>
+						</p>
+						<p>1.寻求快乐虽然只是遮掩问题，但这是我们唯一能做的。</p>
+						<p>2.当我们谈论自由时，我们在谈论什么？</p>
+						<p>3.我感激命运的撮合，虽然你每天一脸的无所谓。</p>
+						<p>4.春暖花开冲进宇宙，发现没有迎面的暖风。</p>
+					</div>
+				</div>
 			</div>
 			<div data-role="footer" data-position="fixed">
 				<h4>Page Footer Page Footer</h4>
 			</div>
 		</div>
+		<!-- book detail page end -->
 	</body>
 </html>
