@@ -5,6 +5,9 @@
 ###主要技术点
 
 jqueryMobile
+windows下使用grunt貌似有点问题，bower install jquerymobile 后无法编译获取需要的文件  
+所以在jQuerymobile官网下载了1.4.5版本的文件，将其中的js和css文件分别copy至public下的JavaScript和css文件夹  
+然后再将其引入到index.html中
 
 ###准备工作
 
