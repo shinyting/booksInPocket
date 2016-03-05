@@ -13,3 +13,7 @@ windows下使用grunt貌似有点问题，bower install jquerymobile 后无法�
 
 使用node+express搭建服务，选用模板为html，需要相应模块辅助  
 先搭建基本页面，再考虑数据库，数据库暂定mongoose
+
+###首页轮播图插件
+
+slick-carousel.js

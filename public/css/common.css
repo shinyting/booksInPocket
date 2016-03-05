@@ -95,3 +95,21 @@ body {
 	background-color: #1e70cd;
 	/*border-color: #1e70cd;*/
 }
+
+/*check page styles*/
+.profile {
+	overflow: hidden;
+}
+.imgbox {
+	float: left;
+	border-radius: 50px;
+	overflow: hidden;
+}
+.imgbox img {
+	display: block;
+	width: 100px;
+	height: 100px;
+}
+.profile p {
+	float: left;
+}
