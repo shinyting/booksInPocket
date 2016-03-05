@@ -17,3 +17,7 @@ windows下使用grunt貌似有点问题，bower install jquerymobile 后无法�
 ###首页轮播图插件
 
 slick-carousel.js
+
+###jQuerymobile 使用
+
+导航栏navbar，在添加样式时除了给当前项加入高亮class，还需要加'ui-state-persist'，才能确保不同页面跳转时相应的nav高亮
